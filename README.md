@@ -1,9 +1,9 @@
-# 🍽️ Recipe Analytics Pipeline
+#  Recipe Analytics Pipeline with Firestore
 A complete end-to-end Data Engineering project using **Firebase Firestore**, **Python ETL**, **Data Validation**, **Analytics**, and **Matplotlib Visualizations**.
 
 ---
 
-## 📌 Overview
+##  Overview
 This project demonstrates a full data engineering workflow built on top of a recipe platform dataset. 
 Data is sourced from **Firebase Firestore**, extracted via Python ETL, validated, transformed, analyzed, 
 and visualized using Python.
@@ -19,32 +19,66 @@ The pipeline includes:
 
 ---
 
-## 🏗️ Project Architecture  
+##  Project Architecture  
 ![Architecture Diagram](Diagrams/Architecture_Diagram.png)
 
 ---
 
-## 🧩 ER Diagram  
+##  ER Diagram  
 ![ER Diagram](Diagrams/ER_Diagram.png)
 
 ---
 
-## 📁 Folder Structure  
+##  Folder Structure  
 ```
 recipe_analytics_pipeline/
 │
+├── README.md
+├── .gitignore
+│
 ├── data/
-│── etl/
-│── Validation/
-│── analytics/
+│   ├── recipe.csv
+│   ├── ingredients.csv
+│   ├── steps.csv
+│   ├── users.csv
+│   ├── interactions.csv
+│
+├── etl/
+│   ├── export_firestore_to_csv.py
+│   ├── seed_firestore.py
+│   └── (ServiceAccountKey.json was removed for security)
+│
+├── Validation/
+│   ├── validate_data.py
+│   └── validation_report.txt
+│
+├── analytics/
+│   ├── analytics_report.py
+│   ├── analytics_charts.py
+│   ├── insights_report.csv
+│   ├── insights_report.txt
+│   │
 │   ├── Charts/
-│── Diagrams/
-└── README.md
+│   │   ├── chart_boxplot_ratings.png
+│   │   ├── chart_bubble_views_likes_rating.png
+│   │   ├── chart_correlation_matrix.png
+│   │   ├── chart_difficulty_donut.png
+│   │   ├── chart_heatmap_views_likes.png
+│   │   ├── chart_preptime_vs_cooktime.png
+│   │   ├── chart_treemap_ingredients.png
+│   │   └── chart_user_activity.png
+│
+├── Diagrams/
+│   ├── Architecture_Diagram.png
+│   └── ER_Diagram.png
+│
+└── requirements.txt
+
 ```
 
 ---
 
-## 🔥 Firestore Setup  
+##  Firestore Setup  
 Firestore collections used in this project:
 - `users`
 - `recipes`
@@ -59,7 +93,7 @@ etl/seed_firestore.py
 
 ---
 
-## 📤 ETL: Export Firestore Data  
+##  ETL: Export Firestore Data  
 Exports Firestore collections into CSV format.
 
 Run:
@@ -69,7 +103,7 @@ python etl/export_firestore_to_csv.py
 
 ---
 
-## 🛡️ Data Validation  
+##  Data Validation  
 Ensures data completeness & consistency.
 
 Run:
@@ -82,7 +116,7 @@ Generates:
 
 ---
 
-## 📊 Analytics & Insights  
+##  Analytics & Insights  
 
 Run:
 ```
@@ -95,7 +129,7 @@ Outputs:
 
 ---
 
-## 📈 Visualizations  
+## Visualizations  
 Charts generated using:
 ```
 python analytics/analytics_charts.py
@@ -115,13 +149,14 @@ All charts stored in:
 
 ---
 
-## 📝 Summary  
+## Summary  
 This project demonstrates a full data engineering pipeline using Firebase as the NoSQL backend and Python for ETL, 
 validation, analytics, and visualization. It is designed to mimic a real-world recipe analytics system with 
 professional documentation, diagrams, and normalized data workflows.
 
 ---
 
-## 👤 Author  
-**Ritesh More**  
+## Author  
+**Ritesh More** 
+**Email**: riteshmore2702@gmail.com 
 Data Engineering Project – Recipe Analytics Pipeline
