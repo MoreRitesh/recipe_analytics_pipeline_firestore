@@ -88,7 +88,7 @@ Firestore collections used in this project:
 
 Data is populated using:
 ```
-etl/seed_firestore.py
+python etl/seed_firestore.py
 ```
 
 ---
