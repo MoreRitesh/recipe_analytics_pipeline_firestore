@@ -234,6 +234,24 @@ It reflects industry-level best practices including:
 
 ---
 
+##  References
+
+- Firebase Firestore Documentation  
+  https://firebase.google.com/docs/firestore
+
+- Firestore Security Rules  
+  https://firebase.google.com/docs/firestore/security/get-started
+
+- Firebase Admin SDK (Python)  
+  https://firebase.google.com/docs/admin/setup
+
+- Pandas Documentation  
+  https://pandas.pydata.org/docs/
+
+- Matplotlib Documentation  
+  https://matplotlib.org/stable/
+
+
 ## Author  
 **Ritesh More**  
 *riteshmore2702@gmail.com*  
