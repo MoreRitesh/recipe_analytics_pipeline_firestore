@@ -1,36 +1,40 @@
-#  Recipe Analytics Pipeline with Firestore
+# 🍽️ Recipe Analytics Pipeline with Firestore  
 A complete end-to-end Data Engineering project using **Firebase Firestore**, **Python ETL**, **Data Validation**, **Analytics**, and **Matplotlib Visualizations**.
 
 ---
 
-##  Overview
-This project demonstrates a full data engineering workflow built on top of a recipe platform dataset. 
-Data is sourced from **Firebase Firestore**, extracted via Python ETL, validated, transformed, analyzed, 
-and visualized using Python.
+## 📌 Overview  
+This project demonstrates a real-world **Data Engineering pipeline** built on top of a recipe analytics platform.  
+The system collects recipe-related data in Firestore, exports it into structured CSVs, validates data quality,  
+performs analytics, and generates visual insights.
 
 The pipeline includes:
-- Firestore → CSV Export  
+
+- Firebase → CSV Data Extraction  
 - Data Quality Validation  
 - Normalized Dataset Creation  
-- Analytics & Insights  
-- Chart Visualizations  
-- ER Diagram  
-- Architecture Diagram  
+- Analytics & Insight Generation  
+- Matplotlib Visualizations  
+- ER & Architecture Diagrams  
 
 ---
 
-##  Project Architecture  
+## 🏗️ Project Architecture  
+This diagram shows the entire workflow from Firestore → ETL → Validation → Analytics → Charts.
+
 ![Architecture Diagram](Diagrams/Architecture_Diagram.png)
 
 ---
 
-##  ER Diagram  
+## 🧩 ER Diagram  
+The ER diagram represents relationships between **Users**, **Recipes**, **Ingredients**, **Steps**, and **Interactions**.
+
 ![ER Diagram](Diagrams/ER_Diagram.png)
 
 ---
 
-##  Folder Structure  
-```
+## 📁 Folder Structure  
+
 recipe_analytics_pipeline/
 │
 ├── README.md
@@ -146,6 +150,39 @@ Charts include:
 
 All charts stored in:  
 `analytics/Charts/`
+
+## 📈 Key Visualizations  
+Below are 4 selected charts that best represent the dataset and insights.
+
+---
+
+### ⭐ **1. Difficulty Distribution (Donut Chart)**
+Shows recipe complexity distribution.
+
+![Difficulty Chart](analytics/Charts/chart_difficulty_donut.png)
+
+---
+
+### ⭐ **2. Heatmap: Views vs Likes**
+Visual relationship between recipe engagement metrics.
+
+![Heatmap](analytics/Charts/chart_heatmap_views_likes.png)
+
+---
+
+### ⭐ **3. Treemap: Ingredient Popularity**
+Shows which ingredients appear most frequently.
+
+![Treemap](analytics/Charts/chart_treemap_ingredients.png)
+
+---
+
+### ⭐ **4. Bubble Chart: Views vs Likes vs Rating**
+Great for visualization in sparse datasets.
+
+![Bubble Chart](analytics/Charts/chart_bubble_views_likes_rating.png)
+
+
 
 ---
 
