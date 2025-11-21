@@ -1,0 +1,12 @@
+firebase-admin==6.5.0
+google-cloud-firestore==2.13.0
+google-auth==2.23.4
+
+pandas==2.2.0
+numpy==1.26.2
+
+matplotlib==3.8.2
+squarify==0.4.4
+
+python-dateutil==2.8.2
+requests==2.31.0
