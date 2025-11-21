@@ -1,0 +1,7 @@
+# Ignore secrets
+etl/ServiceAccountKey.json
+*.json
+
+# Ignore Python cache
+__pycache__/
+*.pyc
