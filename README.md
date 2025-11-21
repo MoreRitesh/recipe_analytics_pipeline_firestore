@@ -35,6 +35,7 @@ The ER diagram represents relationships between **Users**, **Recipes**, **Ingred
 
 ## 📁 Folder Structure  
 
+---
 recipe_analytics_pipeline/
 │
 ├── README.md
