@@ -1,0 +1,11 @@
+views,userId,rating,timestamp,recipeId,likes
+14,user_7,2,2025-11-20 10:40:02.112125+00:00,puran_poli_ritesh,5
+1,user_2,5,2025-11-20 10:40:00.701438+00:00,puran_poli_ritesh,3
+17,user_5,2,2025-11-20 10:40:01.550411+00:00,puran_poli_ritesh,3
+8,user_1,5,2025-11-20 10:40:00.414775+00:00,puran_poli_ritesh,3
+16,user_6,1,2025-11-20 10:40:01.829114+00:00,puran_poli_ritesh,2
+2,user_3,1,2025-11-20 10:40:00.982072+00:00,puran_poli_ritesh,1
+2,user_8,2,2025-11-20 10:40:02.393367+00:00,puran_poli_ritesh,5
+1,user_4,5,2025-11-20 10:40:01.270916+00:00,puran_poli_ritesh,3
+12,user_9,1,2025-11-20 10:40:02.673911+00:00,puran_poli_ritesh,3
+14,user_10,3,2025-11-20 10:40:02.957309+00:00,puran_poli_ritesh,5

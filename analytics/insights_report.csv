@@ -1,0 +1,44 @@
+Insight,Details
+Most Viewed Recipes,"         recipeId  views
+puran_poli_ritesh     87"
+Most Liked Recipes,"         recipeId  likes
+puran_poli_ritesh     33"
+Average Rating Per Recipe,"         recipeId  rating
+puran_poli_ritesh     2.7"
+Difficulty Distribution,"difficulty
+medium    6
+hard      5
+easy      5"
+Average Prep & Cook Time,"Average Prep Time: 19.38 mins
+Average Cook Time: 23.44 mins"
+Most Common Ingredients,"ingredient
+ingredient1                            15
+ingredient2                            15
+2 cups wheat flour                      1
+1 cup chana dal (split Bengal gram)     1
+1 cup grated jaggery                    1
+1/4 tsp cardamom powder                 1
+2 tbsp ghee                             1
+Salt as needed                          1"
+Correlation (Views vs Likes),nan
+Top Engagement Recipes,"         recipeId  engagement
+puran_poli_ritesh         153"
+Ingredients With Highest Views,"                         ingredient  views
+1 cup chana dal (split Bengal gram)     87
+               1 cup grated jaggery     87
+            1/4 tsp cardamom powder     87
+                 2 cups wheat flour     87
+                        2 tbsp ghee     87
+                     Salt as needed     87"
+User Activity Summary,"         views  likes  rating
+userId                       
+user_1       8      3       5
+user_10     14      5       3
+user_2       1      3       5
+user_3       2      1       1
+user_4       1      3       5
+user_5      17      3       2
+user_6      16      2       1
+user_7      14      5       2
+user_8       2      5       2
+user_9      12      3       1"
