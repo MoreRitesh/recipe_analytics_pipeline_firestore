@@ -1,9 +1,9 @@
-# 🍽️ Recipe Analytics Pipeline with Firestore  
+# Recipe Analytics Pipeline with Firestore  
 A complete end-to-end Data Engineering project using **Firebase Firestore**, **Python ETL**, **Data Validation**, **Analytics**, and **Matplotlib Visualizations**.
 
 ---
 
-## 📌 Overview  
+## Overview  
 This project demonstrates a real-world **Data Engineering pipeline** built on top of a recipe analytics platform.  
 The system collects recipe-related data in Firestore, exports it into structured CSVs, validates data quality,  
 performs analytics, and generates visual insights.
@@ -19,21 +19,21 @@ The pipeline includes:
 
 ---
 
-## 🏗️ Project Architecture  
+## Project Architecture  
 This diagram shows the entire workflow from Firestore → ETL → Validation → Analytics → Charts.
 
 ![Architecture Diagram](Diagrams/Architecture_Diagram.png)
 
 ---
 
-## 🧩 ER Diagram  
+## ER Diagram  
 The ER diagram represents relationships between **Users**, **Recipes**, **Ingredients**, **Steps**, and **Interactions**.
 
 ![ER Diagram](Diagrams/ER_Diagram.png)
 
 ---
 
-## 📁 Folder Structure
+## Folder Structure
 ```
 recipe_analytics_pipeline/
 │
@@ -81,16 +81,73 @@ recipe_analytics_pipeline/
 
 ---
 
-## 🔥 Firestore Setup  
-Firestore collections used:
+## Firestore Setup  
 
-- `users`
-- `recipes`
-- `ingredients`
-- `steps`
-- `interactions`
+Below is the detailed structure of all Firestore collections used in this project.
 
-Seed Firestore with sample recipe data:
+### **1. users Collection**
+| Field        | Type      | Description |
+|--------------|-----------|-------------|
+| userId       | string    | Unique ID for the user |
+| name         | string    | Full name of the user |
+| email        | string    | User email address |
+| createdAt    | timestamp | Account creation time |
+| country      | string    | User location (optional) |
+
+---
+
+### **2. recipes Collection**
+| Field         | Type      | Description |
+|---------------|-----------|-------------|
+| recipeId      | string    | Unique ID for the recipe |
+| name          | string    | Recipe name |
+| description   | string    | Short description |
+| difficulty    | string    | easy / medium / hard |
+| prep_time     | number    | Preparation time (mins) |
+| cook_time     | number    | Cooking time (mins) |
+| total_time    | number    | Total time (mins) |
+| createdBy     | string    | userId of recipe creator |
+| createdAt     | timestamp | Timestamp when recipe was added |
+
+---
+
+### **3. ingredients Collection**
+| Field        | Type      | Description |
+|--------------|-----------|-------------|
+| ingredientId | string    | Unique ingredient ID |
+| recipeId     | string    | Link to recipes.recipeId |
+| ingredient   | string    | Ingredient name |
+| quantity     | string    | Quantity used (e.g., "2 cups") |
+
+---
+
+### **4. steps Collection**
+| Field     | Type      | Description |
+|-----------|-----------|-------------|
+| stepId    | string    | Unique step ID |
+| recipeId  | string    | Link to recipes.recipeId |
+| step_num  | number    | Step number |
+| instruction | string  | Description of the cooking step |
+
+---
+
+### **5. interactions Collection**
+| Field     | Type      | Description |
+|-----------|-----------|-------------|
+| interactionId | string | Unique interaction ID |
+| userId    | string    | Link to users.userId |
+| recipeId  | string    | Link to recipes.recipeId |
+| views     | number    | Total views by the user |
+| likes     | number    | Like (0/1) |
+| rating    | number    | Rating 1–5 |
+| commented | boolean   | Whether user left a comment |
+| createdAt | timestamp | Interaction time |
+
+---
+
+
+
+## Seed Firestore with sample recipe data:
 
 ```bash
 python etl/seed_firestore.py
@@ -98,7 +155,7 @@ python etl/seed_firestore.py
 
 ---
 
-## 📤 ETL: Export Firestore to CSV  
+## ETL: Export Firestore to CSV  
 This script extracts Firestore data and saves it into structured CSV files.
 
 ```bash
@@ -114,7 +171,7 @@ Outputs:
 
 ---
 
-## 🛡️ Data Validation  
+## Data Validation  
 Ensures data completeness & consistency.
 
 Run:
@@ -127,7 +184,7 @@ Generates:
 
 ---
 
-## 📊 Analytics & Insights  
+## Analytics & Insights  
 Run:
 ```bash
 python analytics/analytics_report.py
@@ -139,32 +196,32 @@ Outputs:
 
 ---
 
-## 📈 Key Visualizations  
+## Key Visualizations  
 Below are 4 selected charts that best represent the dataset and insights.
 
 ---
 
-### ⭐ **1. Difficulty Distribution (Donut Chart)**
+### **1. Difficulty Distribution (Donut Chart)**
 ![Difficulty Chart](analytics/Charts/chart_difficulty_donut.png)
 
 ---
 
-### ⭐ **2. Heatmap: Views vs Likes**
+### **2. Heatmap: Views vs Likes**
 ![Heatmap](analytics/Charts/chart_heatmap_views_likes.png)
 
 ---
 
-### ⭐ **3. Treemap: Ingredient Popularity**
+### **3. Treemap: Ingredient Popularity**
 ![Treemap](analytics/Charts/chart_treemap_ingredients.png)
 
 ---
 
-### ⭐ **4. Bubble Chart: Views vs Likes vs Rating**
+### **4. Bubble Chart: Views vs Likes vs Rating**
 ![Bubble Chart](analytics/Charts/chart_bubble_views_likes_rating.png)
 
 ---
 
-## 📝 Summary  
+## Summary  
 This project showcases a complete data engineering pipeline using Firebase as the NoSQL backend and Python for ETL, validation, analytics, and visualization.
 
 It reflects industry-level best practices including:
@@ -177,7 +234,7 @@ It reflects industry-level best practices including:
 
 ---
 
-## 👤 Author  
+## Author  
 **Ritesh More**  
-📧 *riteshmore2702@gmail.com*  
+*riteshmore2702@gmail.com*  
 Recipe Analytics Pipeline – Data Engineering Project
