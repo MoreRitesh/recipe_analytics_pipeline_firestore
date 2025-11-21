@@ -157,6 +157,8 @@ professional documentation, diagrams, and normalized data workflows.
 ---
 
 ## Author  
-**Ritesh More** 
-**Email**: riteshmore2702@gmail.com 
+**Ritesh More**  
+
+**Email**: riteshmore2702@gmail.com  
+
 Data Engineering Project – Recipe Analytics Pipeline
